@@ -1,0 +1,7 @@
+stacks:
+  - name: teststack
+    description: just a test stack
+    template: simpleapp
+    variables:
+      flavor: t1.micro
+      key: dale.hamel

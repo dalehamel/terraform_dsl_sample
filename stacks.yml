@@ -1,7 +1,13 @@
+common:
+  remote:
+    s3:
+      bucket: SOME_BUCKET
+      region: us-east-1
 stacks:
   - name: teststack
+    uuid: SOME_UUID
     description: just a test stack
     template: simpleapp
     variables:
       flavor: t1.micro
-      key: dale.hamel
+      key: SOME KEY

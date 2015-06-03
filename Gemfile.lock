@@ -2,11 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     rake (10.4.2)
-    terraform_dsl (0.0.1)
+    terraform_dsl (0.0.2)
+      rake (= 10.4.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rake
-  terraform_dsl
+  terraform_dsl (>= 0.0.2)

@@ -1,13 +1,20 @@
 common:
   remote:
     s3:
-      bucket: SOME_BUCKET
+      bucket: quartermaster-terraform
       region: us-east-1
 stacks:
   - name: teststack
-    uuid: SOME_UUID
+    uuid: 1433300031_dx1FTu-B
     description: just a test stack
     template: simpleapp
     variables:
       flavor: t1.micro
-      key: SOME KEY
+      key: dale.hamel
+  - name: daleh-test-deleteme
+    uuid: 1433378405_Nlk91OYK
+    description: A test stack demonstrating heroku usage
+    template: HerokuTestApp
+    variables:
+      appname: daleh-test-deleteme
+      mysqlplan: ignite
